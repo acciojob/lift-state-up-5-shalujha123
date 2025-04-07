@@ -9,7 +9,7 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <h1>Parent Component</h1>
-        {isLoggedIn ? "You are logged in!" : <ChildComponent handleSubmit={() => setIsLoggedIn(true)} />}
+        {isLoggedIn ? <p>You are logged in!</p> : <ChildComponent handleSubmit={() => setIsLoggedIn(true)} />}
     </div>
   )
 }
